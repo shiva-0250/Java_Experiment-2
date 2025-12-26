@@ -1,0 +1,33 @@
+# Experiment2
+## 2a sourcecode:
+// Program to find Area and Perimeter of a Square
+
+class Square {
+
+    // Method to calculate area of square
+    int area(int side) {
+        return side * side;
+    }
+
+    // Method to calculate perimeter of square
+    int perimeter(int side) {
+        return 4 * side;
+    }
+
+    public static void main(String[] args) {
+
+        // Creating object of Square class
+        Square sq = new Square();
+
+        int side = 5;
+
+        // Calling methods
+        int area = sq.area(side);
+        int perimeter = sq.perimeter(side);
+
+        // Displaying results
+        System.out.println("Side of square: " + side);
+        System.out.println("Area of square: " + area);
+        System.out.println("Perimeter of square: " + perimeter);
+    }
+}
